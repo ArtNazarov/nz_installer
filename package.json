@@ -1,0 +1,23 @@
+{
+  "name": "nz_installer",
+  "type" : "module",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+ },
+  "keywords": [
+    "installer"
+  ],
+  "author": "Nazarov A.A",
+  "license": "MIT",
+  "description": "Installs RELEASE.ZIP from given URL",
+  "dependencies": {
+    "adm-zip": "^0.5.14",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "prompt-sync": "^4.2.0"
+  }
+}
