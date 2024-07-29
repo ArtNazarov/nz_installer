@@ -1,12 +1,12 @@
 {
   "name": "nz_installer",
   "type" : "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./index.js"
  },
   "keywords": [
     "installer"
