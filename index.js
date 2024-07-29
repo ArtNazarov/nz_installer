@@ -58,6 +58,19 @@ class Installer {
             });
         });
     };
+
+    // Установка ПО, каталог задается параметром
+    runInstallToDirectory(releaseUrl, fileName, targetDir) {
+        console.log(`Загружаем ${fileName}`);
+        this.createDirIfNotExists(targetDir);
+        this.downloadZip(releaseUrl, fileName, () => {
+            console.log('Загрузка выполнена');
+            this.extractZip(fileName, targetDir, () => {
+                console.log('Распаковка выполнена');
+                console.log(`Установлено в ${targetDir}`);
+            });
+        });
+    };
    
 }
 
